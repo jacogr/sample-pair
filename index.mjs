@@ -9,12 +9,14 @@ async function main () {
   const seed = mnemonicToMiniSecret(mnemonic);
   const { publicKey } = naclKeypairFromSeed(seed);
 
-  console.log('via nacl', encodeAddress(publicKey, 0));
+  console.log('via nacl (seed)', encodeAddress(publicKey, 0));
 
   const keyring = new Keyring({ type: 'ed25519', ss58Format: 0 });
-  const pair = keyring.addFromUri(u8aToHex(seed));
+  const pairM = keyring.addFromUri(mnemonic);
+  const pairS = keyring.addFromUri(u8aToHex(seed));
 
-  console.log('via pair', pair.address);
+  console.log('via pair (mnem)', pairM.address);
+  console.log('via pair (seed)', pairS.address);
 }
 
 main()

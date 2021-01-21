@@ -9,6 +9,7 @@ Generate equivalent pairs via the underlying util-crypto functions as well as th
 Sample output -
 
 ```
-via nacl 125sX7DUgVPLwssd5UmH7og4n5utaavbaLu5MMaz4Tqns3je
-via pair 125sX7DUgVPLwssd5UmH7og4n5utaavbaLu5MMaz4Tqns3je
+via nacl (seed) 13z3rQhnoam5k2UbAZLwNeo5BUuix2mzJ1cawVdvXaYpz1Bv
+via pair (mnem) 13z3rQhnoam5k2UbAZLwNeo5BUuix2mzJ1cawVdvXaYpz1Bv
+via pair (seed) 13z3rQhnoam5k2UbAZLwNeo5BUuix2mzJ1cawVdvXaYpz1Bv
 ```
